@@ -1,5 +1,11 @@
+import VideoList from "../components/VideoList";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <VideoList />
+    </div>
+  );
 };
 
 export default Home;
