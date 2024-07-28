@@ -1,27 +1,47 @@
 @font-face {
   font-family: "Pretendard";
-  src: url("/Pretendard-Medium.ttf");
+  src: url("/Pretendard-Medium.ttf") format("truetype");
 }
 
 html,
 body {
-  margin: 0px;
+  margin: 0;
   width: 100%;
   background-color: rgb(246, 246, 246);
-  display: flex;
+}
+
+body * {
+  font-family: "Pretendard", sans-serif;
 }
 
 #root {
   background-color: white;
-  max-width: 600px;
+  max-width: 1920px; /* 데스크탑 최대 너비 */
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
   height: 100%;
   box-shadow: rgba(100, 100, 100, 0.2) 0px 0px 29px 0px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
-body * {
-  font-family: "Pretendard";
+/* 모바일 레이아웃 */
+@media (max-width: 600px) {
+  #root {
+    padding: 0 10px;
+  }
+}
+
+/* 태블릿 레이아웃 */
+@media (min-width: 600px) and (max-width: 1024px) {
+  #root {
+    padding: 0 15px;
+  }
+}
+
+/* 데스크탑 레이아웃 */
+@media (min-width: 1024px) {
+  #root {
+    padding: 0 20px;
+  }
 }

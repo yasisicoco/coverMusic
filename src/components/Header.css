@@ -1,14 +1,35 @@
+/* 링크 스타일 */
+a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 기본 색상 상속 */
+}
+
 .Header {
   display: flex;
   align-items: center;
-  padding: 20px 0px;
+  padding: 20px 28px;
   border-bottom: 1px solid rgb(226, 226, 226);
 }
 
-.Header > div {
+.header_home {
+  flex: 1;
   display: flex;
-  width: 50%;
-  font-size: 20px;
+  justify-content: flex-start;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header_middle {
+  flex: 2;
+  display: flex;
   justify-content: center;
-  cursor: pointer;
+  font-size: 16px;
+  gap: 50px;
+}
+
+.header_login {
+  gap: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }

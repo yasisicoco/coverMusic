@@ -1,0 +1,33 @@
+.Button {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+
+  /* 안에있는 텍스트가 화면이 줄어들어도 줄바꿈되지않게 */
+  white-space: nowrap;
+}
+
+.Button_LOGIN {
+  font-size: 16px;
+  font-weight: bold;
+  width: 118px;
+  height: 40px;
+  padding: 8px 18px;
+  gap: 8px;
+  background-color: rgb(13, 13, 13);
+  color: white;
+}
+
+.Button_SIGNUP {
+  font-size: 16px;
+  font-weight: bold;
+  width: 118px;
+  height: 40px;
+  padding: 8px 18px;
+  gap: 8px;
+  background-color: rgb(105, 102, 150);
+  color: white;
+}
